@@ -1,0 +1,29 @@
+server:
+  port: 4200
+spring:
+  application:
+    name: okta
+  data:
+    mongodb:
+      uri: mongodb+srv://sdutta:A8T4bruLnXSdhuPc@multikart.khko0j6.mongodb.net/db-name?retryWrites=true&w=majority
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: ERROR
+    com.auth0.example: TRACE
+
+okta:
+  oauth2:
+    issuer: https://dev-s12jdu7qc05nil8e.us.auth0.com/
+    client-id: WaDUk0JZDvFNmZF2hn8o3LWOkkWtHNTY
+    client-secret: 7LLxx-STev2wTT-sbrgwxEEib5-fLqWkOYi7FCaDntung3-2p6QSr47krPzDWHW9
+
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
+
